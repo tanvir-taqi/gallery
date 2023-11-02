@@ -1,0 +1,19 @@
+.gallery-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 90%;
+    background: #e7e7e7;
+}
+.delete-btn{
+    color: rgb(165, 8, 8);
+    cursor: pointer;
+
+}
+.delete-btn:hover span{
+    
+}

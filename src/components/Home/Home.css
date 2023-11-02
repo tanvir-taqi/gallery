@@ -1,0 +1,15 @@
+
+
+.home-layout{
+    background: #ffffff;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+.home-container{
+    width: 90%;
+    background: #efefef;
+    padding: 5px;
+   
+}
