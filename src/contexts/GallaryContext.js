@@ -74,16 +74,21 @@ const GallaryContext = ({children}) => {
   // handle reset all
   const handleResetAll = () => {
     handleFetchData()
+    setIsSelectedArray([])
   }
 
 
 // load images from localstorage
 // save them in imageData state
 // it will load when the page first loading and also when you sort, delete or reset everything
-    useEffect(() => {
-      const images = window.localStorage.getItem("images");
+  useEffect(() => {
+    const images = window.localStorage.getItem("images");
+    if (images) {
       setImagedata(JSON.parse(images));
-    }, [refetch]);
+    } else {
+      handleFetchData();
+    }
+  }, [refetch]);
 
   // load images from a public directory 
   //  save them in the local storage
