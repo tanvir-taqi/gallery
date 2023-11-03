@@ -4,6 +4,8 @@ import App from './App';
 import './index.css';
 import GallaryContext from './contexts/GallaryContext';
 
+
+
 ReactDOM.render(
   <GallaryContext>
     <App />

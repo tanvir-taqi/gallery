@@ -4,3 +4,10 @@ body {
   font-family: sans-serif;
   min-height: 100vh;
 }
+
+
+@media (max-width: 767px) {
+  .mobile-hidden{
+    display: none;
+  }
+}

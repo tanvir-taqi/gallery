@@ -65,7 +65,7 @@
 }
 .image:hover{
   filter:brightness(50%);
-  transform: scale(96%);
+  transform: scale(106%);
   border-radius: 15px;
 }
 
