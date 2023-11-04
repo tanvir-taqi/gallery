@@ -25,7 +25,7 @@ const GallaryHeader = () => {
         </div>
         <div onClick={handleResetAll} className="reset-btn">
           <p>
-            <span>
+            <span className="reset-icon">
               <ImLoop2></ImLoop2>
             </span>{" "}
             <span className="mobile-hidden">Reset All</span>
@@ -38,7 +38,7 @@ const GallaryHeader = () => {
             <div onClick={handleDeleteSelctedFile}>
               <p className="delete-btn">
                 {" "}
-                <span>
+                <span className="delete-icon">
                   <ImBin2></ImBin2>
                 </span>{" "}
                 <span className="mobile-hidden">

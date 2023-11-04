@@ -9,12 +9,48 @@
     width: 90%;
     background: #e7e7e7;
 }
+
+
+
+
 .delete-btn{
     color: rgb(165, 8, 8);
     cursor: pointer;
-
 }
+.delete-btn:hover .delete-icon{
+    animation: shakeAnimation infinite 0.6s linear ;
+    display: inline-block;
+}
+@keyframes shakeAnimation {
+   0%{
+        transform: rotate(20deg);       
+    }
+    50%{
+       transform: rotate(-20deg);
+   } 
+   100%{
+       transform: rotate(20deg);
+   }
+  
+}
+
+
 
 .reset-btn{
     cursor: pointer;
+    transition: all 1s ease;
+    
+}
+.reset-btn:hover .reset-icon{
+    animation: rotateAnimation infinite 1s linear ;
+    display: inline-block;
+}
+@keyframes rotateAnimation {
+   from{
+        transform: rotate(0deg);       
+    }
+    to{
+       transform: rotate(360deg);
+   }
+  
 }
